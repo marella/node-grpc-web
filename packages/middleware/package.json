@@ -1,0 +1,44 @@
+{
+  "name": "@grpc-web/middleware",
+  "version": "0.0.0",
+  "description": "gRPC Web middleware for Express and Connect.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "src/**/*.{js,ts,ts.map}"
+  ],
+  "dependencies": {
+    "base64-stream": "^1.0.0",
+    "debug": "^4.3.4",
+    "parseurl": "^1.3.3"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marella/node-grpc-web.git",
+    "directory": "packages/middleware"
+  },
+  "bugs": {
+    "url": "https://github.com/marella/node-grpc-web/issues"
+  },
+  "homepage": "https://github.com/marella/node-grpc-web/tree/main/packages/middleware",
+  "keywords": [
+    "grpc",
+    "grpc-web",
+    "express",
+    "connect",
+    "middleware",
+    "proxy",
+    "server",
+    "web",
+    "http",
+    "http2",
+    "backend"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

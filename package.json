@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "npm run clean:types && npm run build:types",
+    "clean:types": "rm packages/*/src/index.d.ts packages/*/src/index.d.ts.map || true",
+    "build:types": "npx -p typescript tsc --allowJs --declaration --declarationMap --emitDeclarationOnly packages/*/src/index.js",
+    "version": "npm run build && npm test && npm version -w packages/middleware -w packages/proxy",
+    "publish": "npm run build && npm test && npm publish -w packages/middleware -w packages/proxy"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "packages/{middleware,proxy}/src/**/*.js"
+    ],
+    "testTimeout": 1000
+  },
+  "devDependencies": {
+    "google-protobuf": "^3.21.2",
+    "grpc-interop-server": "^0.1.0",
+    "grpc-web": "^1.4.2",
+    "jest": "^29.5.0",
+    "typescript": "^5.0.4",
+    "xhr2": "^0.2.1"
+  }
+}

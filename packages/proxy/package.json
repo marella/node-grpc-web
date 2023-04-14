@@ -1,0 +1,44 @@
+{
+  "name": "@grpc-web/proxy",
+  "version": "0.0.0",
+  "description": "gRPC Web proxy for Node.js",
+  "main": "src/index.js",
+  "bin": "src/cli.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "src/**/*.{js,ts,ts.map}"
+  ],
+  "dependencies": {
+    "@grpc-web/middleware": "0.0.0",
+    "connect": "^3.7.0",
+    "cors": "^2.8.5",
+    "minimist": "1.2.8"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marella/node-grpc-web.git",
+    "directory": "packages/proxy"
+  },
+  "bugs": {
+    "url": "https://github.com/marella/node-grpc-web/issues"
+  },
+  "homepage": "https://github.com/marella/node-grpc-web/tree/main/packages/proxy",
+  "keywords": [
+    "grpc",
+    "grpc-web",
+    "proxy",
+    "server",
+    "connect",
+    "web",
+    "http",
+    "http2",
+    "backend"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
