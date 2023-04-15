@@ -1,6 +1,6 @@
 {
   "name": "@grpc-web/middleware",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "gRPC Web middleware for Express and Connect.",
   "main": "src/index.js",
   "types": "src/index.d.ts",

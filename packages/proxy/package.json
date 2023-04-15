@@ -1,6 +1,6 @@
 {
   "name": "@grpc-web/proxy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "gRPC Web proxy for Node.js",
   "main": "src/index.js",
   "bin": "src/cli.js",
@@ -9,7 +9,7 @@
     "src/**/*.{js,ts,ts.map}"
   ],
   "dependencies": {
-    "@grpc-web/middleware": "0.0.0",
+    "@grpc-web/middleware": "0.0.1",
     "connect": "^3.7.0",
     "cors": "^2.8.5",
     "minimist": "1.2.8"
