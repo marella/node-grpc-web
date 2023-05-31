@@ -162,9 +162,13 @@ const ignoredHeaders = new Set([
   'content-type',
   'dnt',
   'host',
+  'keep-alive',
   'origin',
   'pragma',
+  'proxy-connection',
   'referer',
+  'transfer-encoding',
+  'upgrade',
   'x-grpc-web',
   'x-user-agent',
 ]);
